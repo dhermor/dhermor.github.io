@@ -61,10 +61,17 @@ header img {
   border-radius: 8px;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin-bottom: 10px;
+}
+
 .icon-container img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+  width: 70px; /* Ajusta el tamaño de la imagen */
+  height: 70px;
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover;
 }
 
 .date {
@@ -78,4 +85,10 @@ header img {
   padding: 10px;
   border-radius: 5px;
   color: #fff;
+}
+
+/* Alineación de títulos */
+.project h3, .course h3 {
+  text-align: center; /* Alinea el título debajo de la imagen */
+  margin-top: 5px; /* Espaciado entre la imagen y el título */
 }
