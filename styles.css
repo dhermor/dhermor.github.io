@@ -9,18 +9,18 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 50px; /* Espacio adicional debajo del encabezado */
+  margin-bottom: 100px; /* Espacio adicional debajo del encabezado */
 }
 
 .profile-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espacio entre el icono y el nombre */
+  gap: 40px; /* Espacio entre el icono y el nombre */
 }
 
 .profile-container img {
-  width: 150px; /* Tamaño grande para el icono de perfil */
+  width: 350px; /* Tamaño grande para el icono de perfil */
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
@@ -65,7 +65,7 @@ header h1 {
 }
 
 .icon-container img {
-  width: 120px; /* Tamaño grande para los iconos */
+  width: 280px; /* Tamaño grande para los iconos */
   height: 120px;
   border-radius: 50%; /* Hace la imagen circular */
   object-fit: cover;
