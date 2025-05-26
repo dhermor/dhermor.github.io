@@ -9,14 +9,14 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px; /* Espacio adicional debajo del encabezado */
 }
 
 .profile-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px; /* Espacio entre el icono y el nombre */
 }
 
 .profile-container img {
@@ -35,8 +35,9 @@ header h1 {
 .projects-courses {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas */
-  gap: 20px;
-  margin-top: 20px;
+  gap: 40px; /* Espacio entre los bloques */
+  margin: 0 auto; /* Centra horizontalmente */
+  max-width: 1200px; /* Ancho máximo para centrar */
 }
 
 .block {
@@ -46,7 +47,7 @@ header h1 {
   text-align: center;
   transition: transform 0.3s ease; /* Transición suave para el hover */
   cursor: pointer; /* Cambia el cursor al pasar el ratón */
-  height: 400px; /* Aumenta la altura de los bloques */
+  height: 300px; /* Reduce la altura de los bloques */
   display: flex; /* Usa flexbox para centrar el contenido */
   flex-direction: column; /* Alinea el contenido verticalmente */
   justify-content: center; /* Centra verticalmente */
