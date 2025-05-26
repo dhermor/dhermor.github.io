@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   background-color: #111;
@@ -20,7 +19,7 @@ header {
 }
 
 .profile-container img {
-  width: 150px; /* Aumenta el tamaño del icono de perfil */
+  width: 150px; /* Tamaño grande para el icono de perfil */
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
@@ -41,9 +40,15 @@ header h1 {
 
 .block {
   background-color: #333;
-  padding: 20px;
+  padding: 40px; /* Aumenta el padding para dar más espacio */
   border-radius: 8px;
   text-align: center;
+  transition: transform 0.3s ease; /* Transición suave para el hover */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.block:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
 }
 
 .icon-container {
@@ -53,10 +58,15 @@ header h1 {
 }
 
 .icon-container img {
-  width: 100px; /* Tamaño grande para los iconos */
-  height: 100px;
+  width: 120px; /* Tamaño grande para los iconos */
+  height: 120px;
   border-radius: 50%; /* Hace la imagen circular */
   object-fit: cover;
+  transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.block:hover .icon-container img {
+  transform: scale(1.2); /* Aumenta aún más el icono al pasar el ratón */
 }
 
 .block h2 {
