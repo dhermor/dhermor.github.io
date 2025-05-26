@@ -7,21 +7,22 @@ body {
   padding: 0;
 }
 
+/* Encabezado */
 header {
   text-align: center;
-  margin-top: 50px; /* Agrega espacio entre el encabezado y la parte superior de la página */
-  margin-bottom: 50px; /* Espacio adicional debajo del encabezado */
+  margin-top: 50px; /* Espacio desde el borde superior */
+  margin-bottom: 30px;
 }
 
 .profile-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espacio entre el icono y el nombre */
+  gap: 20px;
 }
 
 .profile-container img {
-  width: 150px; /* Tamaño grande para el icono de perfil */
+  width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
@@ -32,53 +33,62 @@ header h1 {
   margin-top: 10px;
 }
 
+/* Contenedor principal centrado verticalmente */
+.main-container {
+  min-height: calc(100vh - 150px); /* Altura restante después del header */
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 20px;
+}
+
 /* Secciones de proyectos/cursos */
 .projects-courses {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas */
-  gap: 40px; /* Espacio entre los bloques */
-  margin: 0 auto; /* Centra horizontalmente */
-  max-width: 1200px; /* Ancho máximo para centrar */
-  justify-items: center; /* Centra horizontalmente los bloques */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .block {
   background-color: #333;
-  padding: 40px; /* Espacio interno */
-  border-radius: 8px;
+  padding: 30px 20px;
+  border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease; /* Transición suave para el hover */
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
-  height: 300px; /* Reduce la altura de los bloques */
-  display: flex; /* Usa flexbox para centrar el contenido */
-  flex-direction: column; /* Alinea el contenido verticalmente */
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .block:hover {
-  transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+  transform: scale(1.05);
 }
 
 .icon-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center;
   margin-bottom: 10px;
 }
 
 .icon-container img {
-  width: 120px; /* Tamaño grande para los iconos */
-  height: 120px;
-  border-radius: 50%; /* Hace la imagen circular */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   object-fit: cover;
-  transition: transform 0.3s ease; /* Transición suave para el hover */
+  transition: transform 0.3s ease;
 }
 
 .block:hover .icon-container img {
-  transform: scale(1.2); /* Aumenta aún más el icono al pasar el ratón */
+  transform: scale(1.2);
 }
 
 .block h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
 }
