@@ -2,19 +2,55 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Portafolio de Proyectos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Herrera Morales - Portafolio</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <h1>Bienvenido a mi Portafolio</h1>
-  <p>Selecciona un área para ver los proyectos:</p>
+  <header>
+    <h1>Daniel Herrera Morales</h1>
+    <img src="ruta/tu-foto.jpg" alt="Foto de mi cara" class="foto-perfil">
+    <nav><a href="#sobre-mi">Sobre mí</a></nav>
+  </header>
 
-  <nav>
-    <ul>
-      <li><a href="telecomunicaciones.html">Grado Superior de Telecomunicaciones</a></li>
-      <li><a href="asir.html">Grado Superior de ASIR</a></li>
-      <li><a href="ciberseguridad.html">Curso de Especialización en Ciberseguridad</a></li>
-    </ul>
-  </nav>
+  <main class="contenedor">
+    <!-- Columna Izquierda -->
+    <section class="columna">
+      <h2>Grado Superior en Sistemas de Telecomunicaciones e Informática</h2>
+      <div class="bloque">
+        <div class="icono">📡</div>
+        <p class="fecha">22/09/20 – 22/06/22</p>
+        <div class="texto-proyecto">Descripción breve o enlace a proyectos aquí.</div>
+      </div>
+
+      <h2>Curso de Especialización en Ciberseguridad</h2>
+      <div class="bloque">
+        <div class="icono">🛡️</div>
+        <p class="fecha">22/09/24 – 22/06/25</p>
+        <div class="texto-proyecto">Proyectos de ciberseguridad aquí.</div>
+      </div>
+    </section>
+
+    <!-- Columna Derecha -->
+    <section class="columna">
+      <h2>Grado Superior en Administración de Sistemas Informáticos en Red</h2>
+      <div class="bloque">
+        <div class="icono">🖥️</div>
+        <p class="fecha">22/09/22 – 22/06/24</p>
+        <div class="texto-proyecto">Proyectos de ASIR aquí.</div>
+      </div>
+
+      <h2>Otros Cursos</h2>
+      <div class="bloque">
+        <div class="icono">📘</div>
+        <div class="texto-proyecto">Aquí puedes incluir cursos online, certificados, etc.</div>
+      </div>
+    </section>
+  </main>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Aquí puedes escribir una pequeña biografía, tus intereses, tus habilidades, etc.</p>
+  </section>
 </body>
 </html>
