@@ -38,6 +38,7 @@ header h1 {
   gap: 40px; /* Espacio entre los bloques */
   margin: 0 auto; /* Centra horizontalmente */
   max-width: 1200px; /* Ancho máximo para centrar */
+  justify-items: center; /* Centra horizontalmente los bloques */
 }
 
 .block {
