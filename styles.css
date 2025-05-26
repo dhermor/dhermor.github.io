@@ -7,22 +7,20 @@ body {
   padding: 0;
 }
 
-/* Encabezado */
 header {
   text-align: center;
-  margin-top: 50px; /* Espacio desde el borde superior */
-  margin-bottom: 30px;
+  margin-bottom: 50px; /* Espacio adicional debajo del encabezado */
 }
 
 .profile-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 20px; /* Espacio entre el icono y el nombre */
 }
 
 .profile-container img {
-  width: 150px;
+  width: 150px; /* Tamaño grande para el icono de perfil */
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
@@ -45,24 +43,24 @@ header h1 {
 /* Secciones de proyectos/cursos */
 .projects-courses {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  max-width: 1200px;
+  grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas */
+  gap: 40px; /* Espacio entre los bloques */
+  max-width: 1200px; /* Ancho máximo para centrar */
   width: 100%;
 }
 
 .block {
   background-color: #333;
-  padding: 30px 20px;
+  padding: 40px; /* Espacio interno */
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 300px; /* Reduce la altura de los bloques */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -72,23 +70,23 @@ header h1 {
 
 .icon-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra horizontalmente */
   margin-bottom: 10px;
 }
 
 .icon-container img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 120px; /* Tamaño grande para los iconos */
+  height: 120px;
+  border-radius: 50%; /* Hace la imagen circular */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .block:hover .icon-container img {
-  transform: scale(1.2);
+  transform: scale(1.2); /* Aumenta aún más el icono al pasar el ratón */
 }
 
 .block h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
