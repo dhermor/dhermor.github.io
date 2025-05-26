@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   background-color: #111;
@@ -40,11 +41,16 @@ header h1 {
 
 .block {
   background-color: #333;
-  padding: 40px; /* Aumenta el padding para dar más espacio */
+  padding: 40px; /* Espacio interno */
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease; /* Transición suave para el hover */
   cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  height: 400px; /* Aumenta la altura de los bloques */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
 }
 
 .block:hover {
