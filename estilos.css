@@ -1,69 +1,81 @@
+/* Estilos generales */
 body {
+  font-family: Arial, sans-serif;
   background-color: #111;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 header {
   text-align: center;
-  padding: 20px;
+  margin-bottom: 30px;
 }
 
-.foto-perfil {
-  width: 120px;
-  height: 120px;
+header h1 {
+  font-size: 24px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+/* Sección "Sobre mí" */
+.about-me {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   object-fit: cover;
-  margin: 10px auto;
+  margin: 10px 0;
 }
 
-nav a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: bold;
+.about-me p {
+  font-size: 16px;
+  color: #fff;
 }
 
-main.contenedor {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  flex-wrap: wrap;
+/* Secciones de proyectos/cursos */
+.projects-courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.columna {
-  width: 45%;
-  min-width: 300px;
-}
-
-.bloque {
-  border: 1px solid #444;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px 0;
-  background-color: #222;
-}
-
-.icono {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.fecha {
-  color: #ccc;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-
-.texto-proyecto {
+.project, .course {
   background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.icon-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.date {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.description {
+  background-color: #444;
   padding: 10px;
   border-radius: 5px;
-}
-
-#sobre-mi {
-  padding: 20px;
-  border-top: 2px solid #444;
+  color: #fff;
 }
