@@ -9,6 +9,7 @@ body {
 
 header {
   text-align: center;
+  margin-top: 50px; /* Agrega espacio entre el encabezado y la parte superior de la página */
   margin-bottom: 50px; /* Espacio adicional debajo del encabezado */
 }
 
