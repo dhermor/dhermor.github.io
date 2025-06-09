@@ -60,7 +60,7 @@ header h1 {
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
-  height: 500px; /* Reduce la altura de los bloques */
+  height: 600px; /* Aumenta la altura de los bloques */
   display: flex; /* Usa flexbox para centrar el contenido */
   flex-direction: column; /* Alinea el contenido verticalmente */
   justify-content: center; /* Centra verticalmente */
