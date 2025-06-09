@@ -9,7 +9,7 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 30px; /* Espacio adicional debajo del encabezado */
+  margin-bottom: 30px; /* Reducido para acercar los bloques al encabezado */
 }
 
 .profile-container {
@@ -33,7 +33,7 @@ header h1 {
 
 /* Contenedor principal centrado verticalmente */
 .main-container {
-  min-height: calc(100vh - 150px); /* Altura restante después del header */
+  min-height: calc(100vh - 150px); /* Altura restante después del encabezado */
   display: flex;
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
@@ -51,12 +51,12 @@ header h1 {
 
 .block {
   background-color: #333;
-  padding: 40px; /* Espacio interno */
+  padding: 60px; /* Aumentado para dar más espacio interno */
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
-  height: 300px; /* Reduce la altura de los bloques */
+  height: 400px; /* Aumentado para hacer los bloques más grandes */
   display: flex; /* Usa flexbox para centrar el contenido */
   flex-direction: column; /* Alinea el contenido verticalmente */
   justify-content: center; /* Centra verticalmente */
@@ -75,8 +75,8 @@ header h1 {
 }
 
 .icon-container img {
-  width: 120px; /* Tamaño grande para los iconos */
-  height: 120px;
+  width: 150px; /* Aumentado para hacer los iconos más grandes */
+  height: 150px;
   border-radius: 50%; /* Hace la imagen circular */
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -87,7 +87,7 @@ header h1 {
 }
 
 .block h2 {
-  font-size: 20px;
+  font-size: 24px; /* Aumentado para mejorar la legibilidad */
   margin: 0;
 }
 
