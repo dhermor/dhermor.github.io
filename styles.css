@@ -54,12 +54,12 @@ header h1 {
 
 .block {
   background-color: #333;
-  padding: 60px; /* Espacio interno */
-  border-radius: 10px;
+  padding: 120px; /* Espacio interno */
+  border-radius: 20px;
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
-  height: 400px; /* Aumentado para hacer los bloques más grandes */
+  height: 600px; /* Aumentado para hacer los bloques más grandes */
   display: flex; /* Usa flexbox para centrar el contenido */
   flex-direction: column; /* Alinea el contenido verticalmente */
   justify-content: center; /* Centra verticalmente */
