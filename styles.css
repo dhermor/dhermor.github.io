@@ -36,7 +36,7 @@ header h1 {
 
 /* Contenedor principal centrado verticalmente */
 .main-container {
-  min-ight: calc(100vh - 130px); /* Altura restante después del encabezado */
+  min-hight: calc(100vh - 130px); /* Altura restante después del encabezado */
   display: flex;
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
