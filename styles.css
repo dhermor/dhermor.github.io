@@ -43,29 +43,29 @@ header h1 {
   padding: 20px;
 }
 
-/* Secciones de proyectos/cursos */
 .projects-courses {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas */
-  gap: 60px; /* Espacio entre los bloques */
-  max-width: 1200px; /* Ancho máximo para centrar */
-  width: 100%; /* Asegura que ocupa todo el ancho disponible */
-  justify-items: center; /* Centra horizontalmente los bloques */
+  display: flex;             /* Cambiamos a flexbox */
+  justify-content: center;   /* Centra los bloques horizontalmente */
+  flex-wrap: wrap;           /* Permite que bajen de línea si no caben */
+  gap: 60px;                 /* Mantiene la separación entre bloques */
+  max-width: 1200px;
+  width: 100%;
 }
 
 .block {
   background-color: #333;
-  padding: 120px; /* Espacio interno */
+  padding: 40px; /* Reducimos el padding para un tamaño más manejable */
   border-radius: 20px;
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
-  height: 600px; /* Aumenta la altura de los bloques */
-  display: flex; /* Usa flexbox para centrar el contenido */
-  flex-direction: column; /* Alinea el contenido verticalmente */
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  width: 280px; /* Un ancho base para cada bloque */
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /* Se elimina la altura fija 'height: 600px' para que se adapte al contenido */
 }
 
 .block:hover {
@@ -79,9 +79,9 @@ header h1 {
 }
 
 .icon-container img {
-  width: 250px; /* Tamaño grande para los iconos */
-  height: 250px;
-  border-radius: 40%; /* Hace la imagen circular */
+  width: 150px; /* Un tamaño más reducido para el icono */
+  height: 150px;
+  border-radius: 40%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
