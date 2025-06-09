@@ -9,7 +9,7 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 30px; /* Reducido para acercar los bloques al encabezado */
+  margin-bottom: 50px; /* Espacio adicional debajo del encabezado */
 }
 
 .profile-container {
@@ -17,6 +17,9 @@ header {
   justify-content: center;
   align-items: center;
   gap: 20px; /* Espacio entre el icono y el nombre */
+  background-color: #222; /* Fondo ligeramente más oscuro para resaltar */
+  padding: 20px; /* Espacio interno */
+  border-radius: 10px; /* Borde redondeado */
 }
 
 .profile-container img {
@@ -51,7 +54,7 @@ header h1 {
 
 .block {
   background-color: #333;
-  padding: 60px; /* Aumentado para dar más espacio interno */
+  padding: 60px; /* Espacio interno */
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -89,26 +92,4 @@ header h1 {
 .block h2 {
   font-size: 24px; /* Aumentado para mejorar la legibilidad */
   margin: 0;
-}
-
-@media (max-width: 1000px) {
-  .projects-courses {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .projects-courses {
-    grid-template-columns: 1fr;
-  }
-
-  .block {
-    height: auto;
-    padding: 20px;
-  }
-
-  .icon-container img {
-    width: 80px;
-    height: 80px;
-  }
 }
