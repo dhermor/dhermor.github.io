@@ -43,29 +43,29 @@ header h1 {
   padding: 20px;
 }
 
+/* 1. Ajustamos el contenedor para forzar una sola línea horizontal */
 .projects-courses {
-  display: flex;             /* Cambiamos a flexbox */
-  justify-content: center;   /* Centra los bloques horizontalmente */
-  flex-wrap: wrap;           /* Permite que bajen de línea si no caben */
-  gap: 60px;                 /* Mantiene la separación entre bloques */
-  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  /* Eliminamos 'flex-wrap: wrap;' para que los bloques se mantengan siempre en una fila */
+  gap: 50px; /* Reducimos un poco el espacio para que quepan mejor */
   width: 100%;
+  padding: 20px; /* Añadimos padding para que no se pegue a los bordes en pantallas pequeñas */
 }
 
 .block {
   background-color: #333;
-  padding: 40px; /* Reducimos el padding para un tamaño más manejable */
+  padding: 40px;
   border-radius: 20px;
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
-  width: 280px; /* Un ancho base para cada bloque */
-  display: flex; 
+  width: 240px; /* Aumentamos el ancho base del bloque */
+  display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  /* Se elimina la altura fija 'height: 600px' para que se adapte al contenido */
 }
 
 .block:hover {
@@ -74,23 +74,24 @@ header h1 {
 
 .icon-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-bottom: 15px; /* Aumentamos el espacio entre el icono y el texto */
 }
 
 .icon-container img {
-  width: 150px; /* Un tamaño más reducido para el icono */
-  height: 150px;
+  width: 170px; /* Hacemos el icono más grande */
+  height: 170px;
   border-radius: 40%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .block:hover .icon-container img {
-  transform: scale(1.2); /* Aumenta aún más el icono al pasar el ratón */
+  transform: scale(1.2);
 }
 
+/* Mantenemos el tamaño del título, que ya es grande y legible */
 .block h2 {
-  font-size: 24px; /* Aumentado para mejorar la legibilidad */
+  font-size: 24px;
   margin: 0;
 }
