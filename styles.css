@@ -36,7 +36,7 @@ header h1 {
 
 /* Contenedor principal centrado verticalmente */
 .main-container {
-  min-height: calc(100vh - 150px); /* Altura restante después del encabezado */
+  min-ight: calc(100vh - 120px); /* Altura restante después del encabezado */
   display: flex;
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
@@ -48,7 +48,7 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas */
   gap: 60px; /* Espacio entre los bloques */
-  max-width: 1200px; /* Ancho máximo para centrar */
+  max-width: 1000px; /* Ancho máximo para centrar */
   width: 100%; /* Asegura que ocupa todo el ancho disponible */
   justify-items: center; /* Centra horizontalmente los bloques */
 }
@@ -60,7 +60,7 @@ header h1 {
   text-align: center;
   transition: transform 0.3s ease;
   cursor: pointer;
-  height: 600px; /* Reduce la altura de los bloques */
+  height: 500px; /* Reduce la altura de los bloques */
   display: flex; /* Usa flexbox para centrar el contenido */
   flex-direction: column; /* Alinea el contenido verticalmente */
   justify-content: center; /* Centra verticalmente */
