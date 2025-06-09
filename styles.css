@@ -23,7 +23,7 @@ header {
 }
 
 .profile-container img {
-  width: 150px; /* Tamaño grande para el icono de perfil */
+  width: 200px; /* Tamaño grande para el icono de perfil */
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
@@ -47,7 +47,7 @@ header h1 {
 .projects-courses {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas */
-  gap: 40px; /* Espacio entre los bloques */
+  gap: 60px; /* Espacio entre los bloques */
   max-width: 1200px; /* Ancho máximo para centrar */
   width: 100%; /* Asegura que ocupa todo el ancho disponible */
 }
@@ -78,9 +78,9 @@ header h1 {
 }
 
 .icon-container img {
-  width: 150px; /* Aumentado para hacer los iconos más grandes */
+  width: 200px; /* Aumentado para hacer los iconos más grandes */
   height: 150px;
-  border-radius: 50%; /* Hace la imagen circular */
+  border-radius: 40%; /* Hace la imagen circular */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
