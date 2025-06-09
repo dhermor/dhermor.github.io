@@ -46,7 +46,7 @@ header h1 {
   grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas */
   gap: 40px; /* Espacio entre los bloques */
   max-width: 1200px; /* Ancho máximo para centrar */
-  width: 100%;
+  width: 100%; /* Asegura que ocupa todo el ancho disponible */
 }
 
 .block {
