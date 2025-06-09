@@ -24,7 +24,7 @@ header {
 
 .profile-container img {
   width: 200px; /* Tamaño grande para el icono de perfil */
-  height: 150px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -79,7 +79,7 @@ header h1 {
 
 .icon-container img {
   width: 200px; /* Aumentado para hacer los iconos más grandes */
-  height: 150px;
+  height: 200px;
   border-radius: 40%; /* Hace la imagen circular */
   object-fit: cover;
   transition: transform 0.3s ease;
