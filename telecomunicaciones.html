@@ -2,16 +2,123 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Proyectos de Telecomunicaciones</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Herrera - Telecomunicaciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles_teleco.css">
+  <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-  <h1>Proyectos - Grado Superior de Telecomunicaciones</h1>
-  <ul>
-    <li>Proyecto 1 - <a href="#">Ver</a></li>
-    <li>Proyecto 2 - <a href="#">Ver</a></li>
-    <li>Proyecto n - <a href="#">Ver</a></li>
-  </ul>
-  <a href="index.html">← Volver a la página principal</a>
+  <div id="header-container"></div>
+
+  <main class="main-container">
+    <div class="content-section">
+      <h2 class="teleco-text">Sistemas de Telecomunicaciones e Informáticos</h2>
+      
+      <h3 class="section-subtitle">Sistemas de Producción Audiovisual</h3>
+      <div class="projects-grid">
+        <div class="project-card teleco-bg">
+          <div class="project-details">
+            <p>Proyecto de sonorización</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-subtitle">Técnicas de Procesos de infraestructura de Telecomunicaciones</h3>
+      <div class="projects-grid">
+        <div class="project-card teleco-bg">
+          <h4>Prevención de riesgos</h4>
+          <div class="project-details">
+            <p>Seguridad y protección medioambiental</p>
+          </div>
+        </div>
+        
+        <div class="project-card teleco-bg">
+          <h4>Infraestructura de Sistemas de Telecomunicaciones</h4>
+          <div class="project-details">
+            <p>Replanteo de infraestructura de sistemas de telecomunicaciones</p>
+          </div>
+        </div>
+        
+        <div class="project-card teleco-bg">
+          <h4>Captadores de Señales de Radio y Televisión</h4>
+          <div class="project-details">
+            <p>Segmentación de redes virtuales</p>
+          </div>
+        </div>
+      
+        <div class="project-card teleco-bg">
+          <h4>Puesta en servicio de redes</h4>
+          <div class="project-details">
+            <p>Instalación y mantenimiento de infraestructura</p>
+          </div>
+        </div>
+      
+
+        <div class="project-card teleco-bg">
+          <h4>ACL, DHCP y NAT</h4>
+          <div class="project-details">
+            <p>Gestión avanzada de redes</p>
+          </div>
+        </div>
+      </div>  
+
+      <h3 class="section-subtitle">Redes Telemáticas</h3>
+      <div class="projects-grid">
+        <div class="project-card teleco-bg">
+          <h4>Routing dinámico</h4>
+          <div class="project-details">
+            <p>Configuración y gestión de rutas dinámicas</p>
+          </div>
+        </div>
+        
+        <div class="project-card teleco-bg">
+          <h4>OSPF</h4>
+          <div class="project-details">
+            <p>Implementación de protocolo OSPF</p>
+          </div>
+        </div>
+        
+        <div class="project-card teleco-bg">
+          <h4>VLAN</h4>
+          <div class="project-details">
+            <p>Segmentación de redes virtuales</p>
+          </div>
+        </div>
+      
+        <div class="project-card teleco-bg">
+          <h4>Puesta en servicio de redes</h4>
+          <div class="project-details">
+            <p>Instalación y mantenimiento de infraestructura</p>
+          </div>
+        </div>
+      
+
+        <div class="project-card teleco-bg">
+          <h4>ACL, DHCP y NAT</h4>
+          <div class="project-details">
+            <p>Gestión avanzada de redes</p>
+          </div>
+        </div>
+      </div>  
+
+      <h3 class="section-subtitle">Proyecto de Fin de Grado</h3>
+      <div class="projects-grid">
+        <div class="project-card teleco-bg">
+          <div class="project-details">
+            <p>Trabajo final de Telecomunicaciones</p>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </main>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
