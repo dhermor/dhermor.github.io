@@ -2,16 +2,33 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Proyectos de ASIR</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Herrera - ASIR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Proyectos - Grado Superior de Administración de Sistemas Informáticos en Red</h1>
-  <ul>
-    <li>Proyecto 1 - <a href="#">Ver</a></li>
-    <li>Proyecto 2 - <a href="#">Ver</a></li>
-    <li>Proyecto n - <a href="#">Ver</a></li>
-  </ul>
-  <a href="index.html">← Volver a la página principal</a>
+  <div id="header-container"></div>
+
+  <main class="main-container">
+    <div class="content-section">
+      <h2 class="asir-text">Administración de Sistemas Informáticos en Red</h2>
+      <div class="projects-grid">
+        <!-- Aquí puedes añadir tus proyectos específicos de ASIR -->
+        <div class="project-card">
+          <h3>Proyecto 1</h3>
+          <p>Descripción del proyecto ASIR</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
