@@ -1,92 +1,254 @@
-/* Estilos generales (sin cambios) */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #fff;
+:root {
+  --dark-bg: #121212;
+  --header-bg: #1a1a2e;
+  --text-primary: #e6f1ff;
+  --accent-blue: #4dccff;
+  --accent-green: #00ff9d;
+  --accent-red: #ff4d4d;
+  --accent-purple: #a970ff;
+}
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 5px;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  background-image: 
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23191919" stroke-width="0.5"/></svg>'),
+    linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  background-size: 40px 40px, cover;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 20px; /* Reducimos un poco el margen para dar más espacio al contenido principal */
+  background-color: var(--header-bg);
+  padding: 15px 25px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.profile-container {
+.header-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
-  background-color: #222;
-  padding: 20px;
-  border-radius: 10px;
 }
 
-.profile-container img {
-  width: 150px; /* Ajustamos un poco la foto para balancear el diseño */
-  height: 150px;
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-info img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 0 15px rgba(77, 204, 255, 0.3);
 }
 
-header h1 {
-  font-size: 24px;
-  margin-top: 10px;
+.profile-info h1 {
+  font-size: 18px;
+  color: var(--accent-green);
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(0, 255, 157, 0.5);
 }
 
-/* --- CAMBIOS PRINCIPALES AQUÍ --- */
-
-/* 1. Contenedor principal para centrar vertical y horizontalmente */
-.main-container {
+.course-switcher {
   display: flex;
-  align-items: center;      /* Centra verticalmente */
-  justify-content: center;  /* Centra horizontalmente */
-  min-height: calc(100vh - 235px); /* Calcula la altura disponible para asegurar el centrado vertical */
-  padding: 20px;
+  gap: 15px;
 }
 
-/* 2. Contenedor de los cursos */
+.course-switcher a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.course-switcher a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-container {
+  padding: 0 20px 40px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 100px
+}
+
 .projects-courses {
   display: flex;
   justify-content: center;
-  gap: 60px; /* Aumentamos el espacio entre los bloques */
+  gap: 20px;
+  width: 100%;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-blue) transparent;
 }
 
-/* 3. Bloques de curso (más anchos y altos) */
+.projects-courses::-webkit-scrollbar {
+  height: 6px;
+}
+.projects-courses::-webkit-scrollbar-thumb {
+  background-color: var(--accent-blue);
+  border-radius: 3px;
+}
+
 .block {
-  background-color: #333;
-  width: 300px;   /* Aumentamos el ANCHO */
-  height: 350px;  /* Aumentamos la ALTURA */
-  padding: 20px;
-  border-radius: 25px; /* Bordes un poco más redondeados */
-  text-align: center;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  flex: 0 0 calc(25% - 20px);
+  min-width: 280px;
+  height: 450px;
+  background-color: rgba(30, 30, 45, 0.7);
+  border-radius: 8px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 .block:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* 4. Iconos dentro de los bloques (más grandes) */
+.icon-container {
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.block:hover .icon-container {
+  transform: scale(1.1);
+}
+
 .icon-container img {
-  width: 200px; /* Iconos mucho más grandes */
-  height: 200px;
-  margin-bottom: 20px; /* Más espacio entre icono y texto */
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
 
 .block h2 {
-  font-size: 26px; /* Título un poco más grande */
-  margin: 0;
+  font-size: 24px;
+  margin: 15px 0 0;
+  position: relative;
 }
 
-/* Estilos de los iconos y texto (sin cambios, pero asegúrate de tenerlos) */
-.block.teleco h2 { color: #9c88ff; }
-.block.asir h2 { color: #8fd3f4; }
-.block.ciberseguridad h2 { color: #f78fb3; }
-.block.otros-cursos h2 { color: #a8b2ff; }
+.block h2::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+  position: absolute;
+}
+
+@keyframes blink {
+  from, to { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.block.teleco { color: var(--accent-blue); }
+.block.asir { color: var(--accent-green); }
+.block.ciberseguridad { color: var(--accent-red); }
+.block.otros-cursos { color: var(--accent-purple); }
+
+@media (max-width: 1024px) {
+  .projects-courses {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: visible;
+  }
+  .block {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+  
+  .course-switcher {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .block {
+    height: 380px;
+  }
+  
+  .icon-container img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .course-switcher {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .course-switcher a {
+    width: 100%;
+  }
+  
+  .block {
+    flex: 0 0 100%;
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block {
+    padding: 20px;
+    height: 280px;
+  }
+  
+  .block h2 {
+    font-size: 20px;
+  }
+  
+  .icon-container img {
+    width: 80px;
+    height: 80px;
+  }
+}
